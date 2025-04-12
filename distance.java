@@ -11,11 +11,22 @@ public class distance {
 
         z1 = p1.get(2);
         z2 = p2.get(2);
-        double res = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        double res = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         res += (50 - z1) + (50 - z2);
         return res;
     }
     public static void main(String[] args) {
-        
+        ArrayList<Integer> p1 = new ArrayList<>();
+        ArrayList<Integer> p2 = new ArrayList<>();
+
+        p1.add(8);
+        p1.add(10);
+        p1.add(10);
+
+        p2.add(6);
+        p2.add(9);
+        p2.add(2);
+
+        System.out.println(d(p1, p2));
     }
 }
