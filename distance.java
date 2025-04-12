@@ -28,5 +28,7 @@ public class distance {
         p2.add(2);
 
         System.out.println(d(p1, p2));
+        
+
     }
 }
